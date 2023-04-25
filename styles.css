@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    color: rgb(228, 26, 228);
+    justify-content: center;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.square {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 100px;
+    border: 1px solid rgb(145, 18, 145);
+    height: 150px;
+    width: 150px;
+}
+
+.square:hover {
+    background-color: chartreuse;
+}
+
+#gameboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    border: 2px solid rgb(145, 18, 145);
+    width: fit-content;
+}
+
+#turn {
+    font-size: 40px;
+    margin-top: 15px;
+    color:rgb(145, 18, 145)
+}
+
+#reset-button {
+    justify-self: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+    width: 30%;
+    margin-top: 20px;
+    background-color: chartreuse;
+    color: green;
+}
