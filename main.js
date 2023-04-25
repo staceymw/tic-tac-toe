@@ -52,15 +52,6 @@ const game = (() => {
       square.textContent = board[i] ? board[i] : "";
       container.appendChild(square);
     }
-
-    //javascript-y way to do side effect
-    // board.forEach((board, i) => {
-    //     const square = document.createElement("div");
-    //     square.classList.add("square");
-    //     square.setAttribute("data-index", i)
-    //     square.textContent = board[i] ? board[i] : "";
-    //     container.appendChild(square);
-    // });
   };
 
   const switchPlayer = () => {
@@ -102,7 +93,6 @@ const game = (() => {
       if (isWin) {
         result = true;
         return result;
-        //return gameBoard.board[a];
       }
     }
 
